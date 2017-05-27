@@ -6,6 +6,10 @@ class PostingsController < ApplicationController
 
   def show
     @posting= Posting.find(params[:id])
-    
+
+  end
+
+  def splash
+    @current_user = current_user
   end
 end

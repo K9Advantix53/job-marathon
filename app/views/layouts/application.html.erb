@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>JobMarathon</title>
-    <%= csrf_meta_tags %>
+    <meta charset="utf-8" />
+
+    <title>jobsMarathon</title>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
+
+    <% if !user_signed_in? %>
+      <div class="navbar small-6 medium-6 large-6 columns">
+        <%= link_to 'TEST', user_facebook_omniauth_authorize_path %>
+      </div>
+    <% else %>
+      <div class='navbar'>
+        <%= link_to image_tag("logo.png", class: "logo"), root_path %>
+        <%= link_to 'Profile', profile_path %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      </div>
+    <% end %>
+
     <%= yield %>
+
   </body>
 </html>
