@@ -1,0 +1,28 @@
+.profileContainer {
+  padding-left: 75px;
+  display: flex;
+  min-height: 300px;
+  width: 100%;
+}
+
+.profile {
+  min-height: 200px;
+  width: 50%;
+  background-color: red;
+  justify-content: space-around;
+
+}
+
+.profile2 {
+  min-height: 200px;
+  width: 50%;
+  background-color: blue;
+  justify-content: space-around;
+}
+
+.postings {
+  margin-left: 75px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: yellow;
+}

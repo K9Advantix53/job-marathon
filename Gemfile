@@ -36,6 +36,7 @@ gem 'devise'
 
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'foundation-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -44,6 +45,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'omniauth'
   gem 'omniauth-facebook'
+  gem 'foundation-rails'
 end
 
 group :development do
