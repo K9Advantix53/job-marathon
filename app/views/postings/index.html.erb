@@ -1,0 +1,18 @@
+
+<% if !user_signed_in? %>
+  <div class="navbar">
+    <%= link_to 'TEST', user_facebook_omniauth_authorize_path %>
+  </div>
+<% else %>
+  <div class='navbar'>
+    <img src=" <%= @current_user.image %>"/>
+    <%= link_to 'Profile', profile_path %>
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+  </div>
+<% end %>
+
+<ul>
+  <% @postings.each do |p| %>
+    <li> <%=link_to p.title, posting_path(p) %> </li>
+  <% end %>
+</ul>
