@@ -19,3 +19,12 @@ ul {
 li {
   list-style: none;
 }
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.blockDisplay {
+  display: block;
+}

@@ -11,5 +11,6 @@ class PostingsController < ApplicationController
 
   def splash
     @current_user = current_user
+    @postings = Posting.order('created_at DESC')
   end
 end

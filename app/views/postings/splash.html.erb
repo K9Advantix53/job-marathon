@@ -9,5 +9,9 @@
 </div>
 
 <div class="postings">
-
+  <ul>
+    <% @postings.each do |p| %>
+      <li> <%=link_to p.title, posting_path(p) %> </li>
+    <% end %>
+  </ul>
 </div>
