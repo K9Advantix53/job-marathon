@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   resources :postings
 
+  resources :letters
+
   get '/profile', to: 'users#profile'
 end

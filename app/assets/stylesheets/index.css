@@ -28,3 +28,7 @@ li {
 .blockDisplay {
   display: block;
 }
+
+.paddingLeft {
+  padding-left: 80px;
+}
