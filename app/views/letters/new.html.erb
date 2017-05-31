@@ -1,0 +1,36 @@
+<div id="cvForm">
+  <%= form_for(@letter) do |f| %>
+    <div>
+      <div>
+        <%= f.text_field :company, placeholder: 'company' %>
+      </div>
+      <br>
+
+      <div>
+        <%= f.text_field :position, placeholder: 'Position'%>
+      </div>
+      <br>
+
+      <div>
+        <%= f.text_field :url, placeholder: 'url'%>
+      </div>
+      <br>
+
+      <div>
+        <%= f.text_area :comment, placeholder: 'witty comment'%>
+      </div>
+      <br>
+
+      <div>
+        <%= f.text_field :address, placeholder: 'address'%>
+      </div>
+      <br>
+
+      <div>
+        <%= f.submit value='Create CV' %>
+      </div>
+      <br>
+
+    </div>
+  <% end %>
+</div>

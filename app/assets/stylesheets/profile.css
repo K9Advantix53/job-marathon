@@ -5,3 +5,7 @@
 .profileImage {
   min-width: 150px;
 }
+
+#cvForm {
+  padding-left: 80px;
+}

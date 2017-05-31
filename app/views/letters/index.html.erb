@@ -1,0 +1,7 @@
+<div class="paddingLeft">
+  <% @letters.each do |l| %>
+    <div>
+      <%= link_to l.company, letter_path(l) %> || <%=   l.created_at.strftime("Created At %m/%d/%Y") %>
+    </div>
+  <% end %>
+</div>
