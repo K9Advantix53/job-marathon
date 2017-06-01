@@ -18,9 +18,13 @@ ActiveRecord::Schema.define(version: 20170531232034) do
   create_table "letters", force: :cascade do |t|
     t.string   "company",    null: false
     t.string   "position",   null: false
-    t.text     "cv",         null: false
+    t.string   "greeting",   null: false
+    t.text     "paragraph1", null: false
+    t.text     "paragraph2", null: false
+    t.text     "paragraph3", null: false
+    t.text     "paragraph4", null: false
+    t.text     "paragraph5", null: false
     t.string   "url"
-    t.string   "comment",    null: false
     t.string   "address",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

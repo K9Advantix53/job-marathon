@@ -21,6 +21,8 @@
         <%= link_to image_tag("logo.png", class: "logo"), root_path %>
         <%= link_to 'Profile', profile_path %>
         <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+        <%= link_to 'Create CV', new_letter_path %>
+        <%= link_to 'CVs', letters_path %>
       </div>
     <% end %>
 
