@@ -67,6 +67,12 @@ class LettersController < ApplicationController
     end
   end
 
+  def destroy
+    @letter = Letter.find(params[:id])
+    @letter.destroy
+    redirect_to letters_path
+  end
+
   protected
 
   def letter_params
